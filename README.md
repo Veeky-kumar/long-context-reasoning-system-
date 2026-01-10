@@ -21,9 +21,9 @@
 **Team Members:**
 | Name | Role | Contact |
 |------|------|---------|
-| **Veeky Kumar** | Team Leader | +917597605761 |
-| **Avinash Kumar Prajapati** | Member | +919928932019 |
-| **Akhilendra Dwivedi** | Member | +919569987852 |
+| **Veeky Kumar** | Team Leader |  |
+| **Avinash Kumar Prajapati** | Member |  |
+| **Akhilendra Dwivedi** | Member |  |
 
 ---
 

@@ -1,0 +1,15 @@
+services:
+  evaluator:
+    build: .
+    container_name: kdsh_evaluator
+    volumes:
+      - ./train.csv:/app/train.csv:ro
+      - ./test.csv:/app/test.csv:ro
+      - ./novels:/app/novels:ro
+      - ./output:/app/output
+      - ./solution.py:/app/solution.py:ro
+      - ./helpers.py:/app/helpers.py:ro
+      - ./pipeline.py:/app/pipeline.py:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: python solution.py --test /app/test.csv --novels /app/novels --output /app/output/submission.csv

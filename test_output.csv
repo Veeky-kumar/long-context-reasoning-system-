@@ -1,0 +1,61 @@
+id,prediction,reasoning
+95,1,The story excerpts do not contain any information that contradicts the proposed backstory. The BACKSTORY introduces an event outside of the timeframe covered by the STORY EXCERPTS and does not conflict with the details provided in them.
+136,0,"The proposed backstory places Noirtier on a small island from 1800 onwards, which is inconsistent with the story's context where he actively advises his son during political upheaval around 1815."
+59,1,Book text not available for verification
+60,1,Book text not available for verification
+124,1,The proposed backstory does not contradict any specific events or characters mentioned in the provided story excerpts.
+111,1,The proposed backstory about M. Morrel's past political activities does not conflict with the story excerpts focusing on his current financial crisis and family drama.
+135,1,The provided backstory does not conflict with any information given in the story excerpts. The backstory focuses on events unrelated to Dantès' narrative and thus is consistent.
+27,1,Book text not available for verification
+110,0,"The proposed backstory introduces new elements (locked study with revolutionary pamphlets and private letters) which are not mentioned in or implied by the provided story excerpts. While it does not directly contradict the story, it adds information that is inconsistent with the given narrative context."
+42,1,Book text not available for verification
+56,1,Book text not available for verification
+80,1,Book text not available for verification
+28,1,Book text not available for verification
+101,1,The proposed backstory does not directly contradict the provided story excerpts but introduces new information that is not supported by or in conflict with the existing narrative.
+91,1,The proposed backstory does not contradict the story excerpts as it involves a different character's actions during Napoleon's time and does not mention any of the characters or events described in the given narrative.
+24,1,Book text not available for verification
+119,0,"The proposed backstory places Dantès in Fenestrella Fortress and involves him writing an essay, which contradicts the given story where he is imprisoned at Château d’If without any mention of intellectual activities."
+93,0,The proposed backstory introduces specific actions and evidence (raising an army and hiding ciphered letters) which are not mentioned or implied in the given story excerpts. The story excerpts only suggest suspicion due to anchoring at Elba without concrete proof of guilt.
+72,1,Book text not available for verification
+16,1,Book text not available for verification
+30,1,Book text not available for verification
+97,1,The proposed backstory does not contradict the story excerpts; it introduces an additional aspect of Abbé Faria’s knowledge and expertise unrelated to the treasure discussion.
+22,1,Book text not available for verification
+53,1,Book text not available for verification
+58,1,Book text not available for verification
+81,1,Book text not available for verification
+47,1,Book text not available for verification
+7,1,Book text not available for verification
+121,1,The proposed backstory introduces additional context about meeting Edmond Dantès' father and hearing tales about Pharaon but does not contradict any specific detail mentioned in the story excerpts.
+129,0,"The proposed backstory about learning to carve fish-bone pen-nibs from an old Macao watchmaker has no relevance or connection to the story excerpts provided which detail a conversation between Albert and Franz regarding their encounter with Count Monte Cristo. The backstory does not contradict the story but also does not align with it in any meaningful way, thus making them unrelated."
+51,1,Book text not available for verification
+127,1,The backstory does not contradict any specific details in the story excerpts; it provides a plausible summary of part of the character's background that is consistent with the original novel.
+133,1,The proposed backstory does not contradict the story excerpts but introduces an element (fusion of religion and reason) that is neither supported nor contradicted by the provided context.
+52,1,Book text not available for verification
+114,1,The proposed backstory does not contradict any specific details in the story excerpts. It provides additional context about Faria's early life and intellectual capabilities without conflicting with his later role or claims.
+2,1,Book text not available for verification
+33,1,Book text not available for verification
+15,1,Book text not available for verification
+82,1,Book text not available for verification
+37,1,Book text not available for verification
+3,1,Book text not available for verification
+103,1,The proposed backstory does not contradict the given story excerpts as it provides additional context about Noirtier's past actions during Napoleon's rise to power which is consistent with his portrayal as an old Jacobin who has lived through significant political changes.
+94,0,"The proposed backstory introduces medical conditions and actions regarding political prisoners which are entirely absent from the provided story excerpts. While there is no direct contradiction, these new facts do not align with the context given."
+85,1,Book text not available for verification
+21,1,Book text not available for verification
+49,1,Book text not available for verification
+140,0,"The proposed backstory introduces friendships within the prison and during exile which are not mentioned or implied by the provided story excerpts. While there is no direct contradiction, the introduction of such relationships contradicts the portrayal of Dantès' isolation as described in the story."
+64,1,Book text not available for verification
+131,1,"The backstory of being born in a declining Italian noble house and having an exceptional memory aligns well with the character's demonstrated knowledge of Italian nobles, historical figures, and literature mentioned in the story excerpts."
+61,1,Book text not available for verification
+86,1,Book text not available for verification
+38,1,Book text not available for verification
+132,1,The proposed backstory does not contradict the given story excerpts as they do not provide any information that would disprove or confirm this additional detail about Dantès' early life.
+77,1,Book text not available for verification
+70,1,Book text not available for verification
+115,0,"The proposed backstory about being a Jesuit novice in Goa and reading Charaka Samhita does not align with the story excerpts provided. The excerpts describe scenes from 'The Count of Monte Cristo' where the count is interacting with Franz and Albert in Rome, offering them hospitality and discussing arrangements for viewing an execution at Piazza del Popolo. There is no mention or indication of any connection to a Jesuit background or medical texts from India in these excerpts."
+78,1,Book text not available for verification
+87,1,"The proposed backstory provides additional context for Maximilian's character that isn't mentioned in the story excerpts. However, it doesn't introduce any contradictions and remains consistent with the narrative provided."
+75,1,Book text not available for verification
+44,1,Book text not available for verification

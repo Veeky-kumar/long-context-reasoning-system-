@@ -345,14 +345,22 @@ Actual 1              0               51
 
 Analysis:
 - True Positives (Consistent→Consistent): 51 ✅
-- True Negatives (Contradict→Contradict): 0
-- False Positives (Consistent→Contradict): 0 ✅
-- False Negatives (Contradict→Consistent): 29 ❌
+- True Negatives (Contradict→Contradict): 0 ❌
+- False Positives (Consistent misclassified as Contradict): 0 ✅
+- False Negatives (Contradict misclassified as Consistent): 29 ❌
+
+Performance Metrics:
+- Precision for class 1 (Consistent): 51/80 = 63.75%
+- Recall for class 1 (Consistent): 51/51 = 100%
+- Precision for class 0 (Contradict): undefined (never predicted)
+- Recall for class 0 (Contradict): 0/29 = 0%
 
 Key Observations:
-- Zero false positives (highly conservative)
-- Misses all contradictions (needs improvement)
-- Perfect precision on consistent cases
+- System predicts "Consistent" (1) for all test cases
+- Achieves perfect recall on consistent cases (100%)
+- Fails to detect any contradictions (0% recall)
+- Conservative behavior: prioritizes avoiding false positives
+- Baseline accuracy of 63.75% matches the class distribution (51/80)
 ```
 
 ### Processing Time Breakdown
@@ -362,21 +370,44 @@ Key Observations:
 | **Initial Setup** |
 | Model Loading | ~15 sec | One-time per run |
 | Novel Chunking | ~2 sec | One-time per novel |
-| Embedding Generation | ~40 min | One-time (2413 chunks total) |
+| Embedding Generation | ~40 min | One-time (4,270 chunks total) |
 | **Per Query** |
-| Semantic Retrieval | ~0.2 sec | Fast |
+| Semantic Retrieval | ~0.2 sec | Fast cosine similarity |
 | LLM Inference | ~4 sec | Main bottleneck |
 | **Total** |
 | Cold Start (first run) | ~45 min | Includes embedding generation |
-| Warm Run (cached) | ~5-6 min | Only LLM inference |
+| Warm Run (cached embeddings) | ~5-6 min | Only LLM inference needed |
 
 ### Resource Usage
 
 - **Memory Peak:** 4GB (embeddings + LLM)
-- **Disk Usage:** 500MB (model cache)
+- **Disk Usage:** ~500MB (model cache + embeddings)
 - **CPU Usage:** 100% during embedding generation
 - **Network:** Minimal (local Ollama)
 
+### Error Analysis
+
+**System Behavior:**
+- The model defaults to "Consistent" (1) for all predictions
+- This conservative approach avoids false positives entirely
+- However, it fails to identify any actual contradictions
+
+**Why This Happens:**
+1. **Prompt Design:** "When in doubt → prediction: 1" creates bias
+2. **Low Temperature (0.1):** Makes model highly deterministic and cautious
+3. **Class Imbalance:** Training data has more consistent (51) than contradict (29) cases
+4. **Context Limitations:** 10 chunks may not capture all relevant contradictions
+
+**Trade-offs:**
+- ✅ Zero false positives (high precision on what it does predict)
+- ✅ Never incorrectly flags consistent backstories as contradictions
+- ❌ Cannot detect contradictions (zero recall for class 0)
+- ❌ Acts as a constant classifier (baseline model)
+
+**Implications for Test Set:**
+- Expected test accuracy will depend on class distribution
+- If test set has similar 64/36 split (consistent/contradict), expect ~64% accuracy
+- System essentially bets that "most backstories are consistent"
 ---
 
 ## 🔧 Troubleshooting

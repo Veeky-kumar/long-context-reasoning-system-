@@ -345,9 +345,10 @@ Actual 1              0               51
 
 Analysis:
 - True Positives (TP): 51 - Correctly predicted Consistent ✅
-- True Negatives (TN): 0 - Correctly predicted Contradict ❌
-- False Positives (FP): 0 - Wrongly predicted Contradict (when actually Consistent) ✅
-- False Negatives (FN): 29 - Wrongly predicted Consistent (when actually Contradict) ❌
+- True Negatives (TN): 0 - No Contradict predictions made❌
+- False Positives (FP): 29 – Contradict cases incorrectly predicted as Consistent ❌
+- False Negatives (FN): 0 – No Consistent cases predicted as Contradict
+
 
 Performance Metrics:
 - **Accuracy:** (TP + TN) / Total = (51 + 0) / 80 = 63.75%
